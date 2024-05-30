@@ -50,6 +50,11 @@ class Song:
     @classmethod
     def print_name_of_all_genres(cls):
         print(cls.genre_count.keys())
+        print(f"{cls.genres} Total: {len(cls.genres)} ")
+    
+    @classmethod
+    def print_name_of_all_artists(cls):
+        print(f"Artists: {sorted(cls.artists)}  Total: {len(cls.artists)}")
 
     @classmethod
     def print_no_of_songs(cls):
@@ -66,5 +71,8 @@ ninety_nine_problems = Song("99 Problems", "Jay-Z", "Rap")
 
 # Print the number of songs
 Song.print_no_of_songs()
+Song.print_artist_count()
+Song.print_name_of_all_genres()
+Song.print_name_of_all_artists()
 
-# Print
+
